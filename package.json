@@ -1,0 +1,26 @@
+{
+  "name": "elemental",
+  "version": "1.0.0",
+  "description": "A template project for simple websites without dependencies",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": " npx browser-sync start --server \"docs\" --files \"docs\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nilslockean/elemental.git"
+  },
+  "author": "Nils Lockean",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nilslockean/elemental/issues"
+  },
+  "homepage": "https://github.com/nilslockean/elemental#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}
