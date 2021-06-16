@@ -54,10 +54,10 @@ a:link::after,
 a:visited::after {
   content: '';
   position: absolute;
-  height: 4px;
+  height: 2px;
   background: var(--main-link-color);
   top: auto;
-  bottom: -6px;
+  bottom: -4px;
   right: 20%;
   left: 20%;
   border-radius: 2px;
