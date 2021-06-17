@@ -55,15 +55,16 @@ a:focus {
 a::after,
 a:link::after,
 a:visited::after {
+  --border-width: 2px;
   content: '';
   position: absolute;
-  height: 2px;
+  height: var(--border-width);
   background: var(--main-link-color);
   top: auto;
-  bottom: -4px;
+  bottom: calc(-1 * var(--border-width));
   right: 20%;
   left: 20%;
-  border-radius: 2px;
+  border-radius: var(--border-width);
   transition: all 0.2s;
 }
 
