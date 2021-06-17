@@ -1,11 +1,14 @@
 :root {
   --beige: #f3ebde;
   --red: #6c2334;
-
   --system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  --varela: 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+
   --main-bg-color: var(--beige);
   --main-color: var(--red);
+  --main-font: var(--varela);
 
   --main-link-color: var(--main-color);
   --main-link-hover-color: #300;
@@ -30,7 +33,7 @@ html {
 }
 
 body {
-  font-family: var(--system-font);
+  font-family: var(--main-font);
   color: var(--main-color);
 }
 

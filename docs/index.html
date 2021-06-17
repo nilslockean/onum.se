@@ -32,24 +32,25 @@
     <link rel="stylesheet" href="./index.css" />
     <link rel="icon" href="./favicon.png" type="image/png" />
 
-    <!-- OPTIONAL GOOGLE FONTS
-      Fight FOUT and keep lighthouse happy: 
-      https://css-tricks.com/how-to-load-fonts-in-a-way-that-fights-fout-and-makes-lighthouse-happy/
-    
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      media="print" onload="this.media='all'">
-    
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+
     <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+      <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
     </noscript>
-    -->
 
     <title>Onum &bull; Förmedlar och renoverar utvalda, begagnade möbler</title>
   </head>
@@ -870,5 +871,16 @@
         </p>
       </main>
     </div>
+
+    <!-- Enable document.fonts.check('1rem "M PLUS Rounded 1c"') -->
+    <div
+      aria-hidden="true"
+      class="hidden"
+      style="font-family: 'M PLUS Rounded 1c'"
+    >
+      &nbsp;
+    </div>
+
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
