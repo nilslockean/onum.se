@@ -1,6 +1,7 @@
 const externalFonts = ['M PLUS Rounded 1c'] // Array of CSS font-name properties
 const maxFontLoadTime = 2000
 let fontLoadTimeout = null
+let currentWindowHeight
 
 const checkFont = fontName => {
   return new Promise(resolve => {
@@ -56,6 +57,20 @@ const handleFontsLoaded = () => {
   }
 }
 
+const handleWindowResize = () => {
+  if ('visualViewport' in window) {
+    const { height } = window.visualViewport
+    if (height === currentWindowHeight) return
+
+    currentWindowHeight = height
+
+    const fullHeightElements = document.querySelectorAll('.full-height')
+    for (const element of fullHeightElements) {
+      element.style.height = `${height}px`
+    }
+  }
+}
+
 const onLoad = () => {
   document.body.classList.remove('no-js')
 
@@ -64,6 +79,8 @@ const onLoad = () => {
     fontLoadTimeout = setTimeout(handleFontsLoaded, maxFontLoadTime)
     Promise.all(fontChecks).then(handleFontsLoaded)
   }
+
+  window.addEventListener('resize', handleWindowResize)
 }
 
 document.addEventListener('DOMContentLoaded', onLoad)

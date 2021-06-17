@@ -76,9 +76,12 @@ a:focus::after {
   left: 0;
 }
 
+.full-height {
+  min-height: 100vh;
+}
+
 .site-layout {
   overflow: hidden;
-  min-height: 100vh;
   text-align: center;
   display: flex;
   flex-flow: column nowrap;
