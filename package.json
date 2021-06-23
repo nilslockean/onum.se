@@ -1,6 +1,6 @@
 {
   "name": "elemental",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A template project for simple websites without dependencies",
   "main": "index.js",
   "directories": {
