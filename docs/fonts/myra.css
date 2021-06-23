@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Myra 4F Caps';
+  src: url('./Myra4FCaps-Bold.woff2') format('woff2'),
+    url('./Myra4FCaps-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myra 4F Caps';
+  src: url('./Myra4FCaps-Regular.woff2') format('woff2'),
+    url('./Myra4FCaps-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

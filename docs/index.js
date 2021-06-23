@@ -1,4 +1,4 @@
-const externalFonts = ['M PLUS Rounded 1c'] // Array of CSS font-name properties
+const externalFonts = ['Myra 4F Caps', 'DIN Pro'] // Array of CSS font-name properties
 const maxFontLoadTime = 2000
 let fontLoadTimeout = null
 let currentWindowHeight

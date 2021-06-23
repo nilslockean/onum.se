@@ -1,14 +1,17 @@
 :root {
   --beige: #f3ebde;
   --red: #6c2334;
+
   --system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  --varela: 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  --body-font: 'DIN Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  --heading-font: 'Myra 4F Caps', 'DIN Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue',
+    sans-serif;
 
   --main-bg-color: var(--beige);
   --main-color: var(--red);
-  --main-font: var(--varela);
 
   --main-link-color: var(--main-color);
   --main-link-hover-color: #300;
@@ -30,11 +33,42 @@
 html {
   scroll-behavior: smooth;
   background: var(--main-bg-color);
+  font-size: 16px;
 }
 
 body {
-  font-family: var(--main-font);
+  font-family: var(--body-font);
   color: var(--main-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: var(--heading-font);
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.5rem;
 }
 
 a,
@@ -62,8 +96,8 @@ a:visited::after {
   background: var(--main-link-color);
   top: auto;
   bottom: calc(-1 * var(--border-width));
-  right: 20%;
-  left: 20%;
+  right: 85%;
+  left: 0;
   border-radius: var(--border-width);
   transition: all 0.2s;
 }
@@ -105,6 +139,10 @@ header {
 
 .title {
   font-size: 5rem;
+}
+
+.system-font {
+  font-family: var(--system-font);
 }
 
 /* Accessible hiding */

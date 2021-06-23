@@ -32,24 +32,25 @@
     <link rel="stylesheet" href="./index.css" />
     <link rel="icon" href="./favicon.png" type="image/png" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="./fonts/myra.css" rel="stylesheet" as="style" />
     <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
+      href="./fonts/myra.css"
       rel="stylesheet"
-      as="style"
+      media="print"
+      onload="this.media='all'"
     />
+
+    <link href="./fonts/din.css" rel="stylesheet" as="style" />
     <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
+      href="./fonts/din.css"
       rel="stylesheet"
       media="print"
       onload="this.media='all'"
     />
 
     <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
-        rel="stylesheet"
-      />
+      <link href="./fonts/myra.css" rel="stylesheet" />
+      <link href="./fonts/din.css" rel="stylesheet" />
     </noscript>
 
     <title>Onum &bull; Förmedlar och renoverar utvalda, begagnade möbler</title>
@@ -872,12 +873,13 @@
       </main>
     </div>
 
-    <!-- Enable document.fonts.check('1rem "M PLUS Rounded 1c"') -->
-    <div
-      aria-hidden="true"
-      class="hidden"
-      style="font-family: 'M PLUS Rounded 1c'"
-    >
+    <!-- Enable document.fonts.check('1rem "Myra 4F Caps"') -->
+    <div aria-hidden="true" class="hidden" style="font-family: 'Myra 4F Caps'">
+      &nbsp;
+    </div>
+
+    <!-- Enable document.fonts.check('1rem "DIN Pro"') -->
+    <div aria-hidden="true" class="hidden" style="font-family: 'DIN Pro'">
       &nbsp;
     </div>
 
