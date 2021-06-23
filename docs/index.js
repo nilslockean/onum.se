@@ -46,15 +46,15 @@ const handleFontsLoaded = () => {
   const allLoaded = externalFonts.every(fontName =>
     document.fonts.check('1rem "' + fontName + '"')
   )
-  if (allLoaded) {
-    console.log('All fonts were loaded successfully', externalFonts)
-  } else {
-    console.log(
-      `Stopped waiting for fonts to load after ${
-        maxFontLoadTime / 1000
-      } seconds`
-    )
-  }
+  // if (allLoaded) {
+  //   console.log('All fonts were loaded successfully', externalFonts)
+  // } else {
+  //   console.log(
+  //     `Stopped waiting for fonts to load after ${
+  //       maxFontLoadTime / 1000
+  //     } seconds`
+  //   )
+  // }
 }
 
 const handleWindowResize = () => {
@@ -80,7 +80,7 @@ const onLoad = () => {
     Promise.all(fontChecks).then(handleFontsLoaded)
   }
 
-  window.addEventListener('resize', handleWindowResize)
+  // window.addEventListener('resize', handleWindowResize)
 }
 
 document.addEventListener('DOMContentLoaded', onLoad)
