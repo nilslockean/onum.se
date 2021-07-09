@@ -171,7 +171,10 @@ a:focus::after {
   html {
     font-size: calc(var(--base-font-size) * 1.25);
   }
+}
 
+/* Extra Large Device Breakpoint */
+@media (min-width: 1600px) {
   @supports (display: grid) {
     .site-layout {
       display: grid;
